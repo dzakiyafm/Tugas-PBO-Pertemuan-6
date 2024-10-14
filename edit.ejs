@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBO Pertemuan 6</title>
+</head>
+<body>
+    <h2>Edit Anggota</h2>
+    <form action="/update/<%= anggota.id %>" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required value="<%= anggota.name%>"><br>
+        <label for="instagram">Instagram:</label>
+        <input type="text" id="instagram" name="instagram" value="<%= anggota.instagram%>"><br>
+        <label for="grup">Grup:</label>
+        <input type="text" id="grup" name="grup" value="<%= anggota.grup%>"><br>
+        <button type="submit">Simpan</button>
+    </form>
+</body>
+</html>
